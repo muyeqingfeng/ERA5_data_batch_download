@@ -26,7 +26,7 @@ urllib3.disable_warnings()
 c = cdsapi.Client()
 
 # define the pressure levels you want download
-pressure_level = ['800','850','900','1000']
+pressure_level = ['100','200','300','400','500','600','700','750','800','850','900','1000']
 
 # define the years you want to download
 yearstart = 2000
