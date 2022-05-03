@@ -20,7 +20,7 @@ variable_nc = ['z','q','u','v']
 # 改变工作路径到目标文件夹
 def change_path(pl_para):
 	file_path = "z" + pl
-	dirs = os.path.join("/mnt/PRESKY/user/jinxiangze/xiangze/xiaot/ERA5/",file_path,"data_process_ws")
+	dirs = os.path.join("./",file_path,"data_process_ws")
 	if not os.path.exists(dirs):
 		os.makedirs(dirs)
 		os.chdir(dirs)
@@ -36,9 +36,9 @@ for year in years:
 	for pl in pressure_level:
 		change_path(pl)
 		for var,var_nc in zip(variable_list,variable_nc):
-			file_name1 = os.path.join("/mnt/PRESKY/user/jinxiangze/xiangze/xiaot/ERA5/",'z'+pl,'download_ws',
+			file_name1 = os.path.join("./",'z'+pl,'download_ws',
 									 '{}.nc'.format(var+pl+'_'+year))
-			file_name2 = os.path.join("/mnt/PRESKY/user/jinxiangze/xiangze/xiaot/ERA5/", 'z' + pl, 'download_ws',
+			file_name2 = os.path.join("./", 'z' + pl, 'download_ws',
 									 '{}.nc'.format(var + pl + '_' + str(int(year)+1)))
 			# python读取的nc变量排列为 time*lat*log
 			ncfile1 = nc.Dataset(file_name1)
