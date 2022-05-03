@@ -111,9 +111,9 @@ for task = [1, 2]
         title('DEM-elv-mask', 'fontsize', 12)
         print(gcf, ['/mnt/PRESKY/user/weishuo/DEM_Download/map/DEM-elv-mask.png'], '-r200', '-dpng')
 		
-		contourf(elv'-dem_ERA5);hcb = colorbar;
-		title('JIN-WEI difference', 'fontsize', 12)
-		print(gcf, ['./DEM_Download/map/DEM-difference.png'], '-r200', '-dpng')
+	contourf(elv'-dem_ERA5);hcb = colorbar;
+	title('JIN-WEI difference', 'fontsize', 12)
+	print(gcf, ['./DEM_Download/map/DEM-difference.png'], '-r200', '-dpng')
         close all
     end
 end
