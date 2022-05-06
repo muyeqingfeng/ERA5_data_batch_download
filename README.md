@@ -14,6 +14,6 @@ ECMWF中ERA5再分析数据的批量下载。此代码在使用过程中，可�
 USGS地理信息中高程数据处理，官方提供了批量下载的工具bulk download，具体使用参考https://blog.csdn.net/qq_38734327/article/details/124347019
 下载的高程数据数据精度达到 30m；我进行相关工作的模型网格点是0.25° * 0.25°，这个代码将相应区域的数据分辨率进行了由高到低的平均处理。
 
-# pre_download.py
+# pre_download.py ftp_pre_download.sh
 noaa中降水hourly数据批量下载
 数据地址：【https://www.ncei.noaa.gov/data/cmorph-high-resolution-global-precipitation-estimates/access/】
